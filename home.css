@@ -1,0 +1,32 @@
+
+aside {
+    width:43%;
+    margin: 0 0 0 40px;
+}
+
+.img_woman {
+    position:absolute;
+    width: 18%;
+    bottom: 0px;
+    z-index:2;
+}
+
+.img_man {
+    position:absolute;
+    width: 25%;
+    left: 16%;
+    /* left: 298px; */
+    bottom: 0px;
+    z-index:1;
+}
+
+
+article{
+    width: 47.5%;
+    float: right;
+    /* font-size: 26px; */
+    font-size: 160%;
+    line-height: 40px;
+    letter-spacing: 3px;
+    padding: 0 8% 0 0;
+}

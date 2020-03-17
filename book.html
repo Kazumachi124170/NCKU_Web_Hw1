@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="book.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">  
+        function AdultMinus(){
+            var num = Number(document.getElementById("adult").innerHTML);
+            if(num!=0){
+                document.getElementById("adult").innerHTML = num-1;
+            }
+        }
+        function ChildrenMinus(){
+            var num = Number(document.getElementById("children").innerHTML);
+            if(num!=0){
+                document.getElementById("children").innerHTML = num-1;
+            }
+        }
+        function AdultPlus(){
+            var num = Number(document.getElementById("adult").innerHTML);
+            document.getElementById("adult").innerHTML = num+1;
+        }
+        function ChildrenPlus(){
+            var num = Number(document.getElementById("children").innerHTML);
+            document.getElementById("children").innerHTML = num+1;
+        }
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left',
+                locale: {
+                    format: 'YYYY/M/DD'
+                }
+            });
+        });
+    </script>
+    <header class="header">
+        <a class="header_block">註冊/登入</a>
+        <a class="header_block">LANGUAGE</a>
+    </header> 
+    
+    <ul>
+        <li><a class = "nav_left" href="#AboutUs">關於我們</a></li>
+        <li><a class = "nav_left" href="#Intro">館內簡介</a></li>
+        <li class = "LOGO">HOTEL</li>
+        <li><a class = "nav_right" href="#Contact">聯絡我們</a></li>
+        <li><a class = "nav_right" id="book" href="#Booking">立即訂房</a></li>
+    </ul>
+    <article>
+        <section>
+            <p class="mouseDefault">您預計什麼時候入住</p>
+            <!-- <p class = "date mouseDefault"> 2020/3/2-2020/3/1</p> -->
+            <input type="text" name="daterange">
+        </section>
+
+
+        <section>
+            <p class="inline">成人　</p>
+            <p class="inline bold mousePointer" onclick="AdultMinus()">-</a>
+            <p class="inline bold" id="adult">0</a>
+            <p class="inline bold mousePointer" onclick="AdultPlus()">+</a>
+        </section>
+        <section>
+            <p class="inline">兒童　</p>
+            <p class="inline bold mousePointer" onclick="ChildrenMinus()">-</a>
+            <p class="inline bold" id="children">0</a>
+            <p class="inline bold mousePointer" onclick="ChildrenPlus()">+</a>
+        </section>
+        <section class = "next">
+            <a class="next_button" href="">下一步</a>
+        </section>
+    </article>
+    <aside class="imgcontainer">
+        <img class="img img_man" src="./Material/img/person1@2x.png">
+        <img class="img img_woman" src="./Material/img/person2@2x.png">
+        <img class="img img_boy" src="./Material/img/person3@2x.png">
+    </aside>
+</body>
+</html>
