@@ -2,6 +2,7 @@
 * {
     font-family: 'Noto Sans TC';
     color: #FDFAE7;
+    overflow: hidden;
 }
 
 header{

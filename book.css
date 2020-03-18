@@ -10,6 +10,12 @@ article{
     /* width: 50%; */
     /* display: inline-block; */
 }
+
+p{
+    line-height: 150%;
+
+}
+
 .mousePointer {
     cursor: pointer;
 }
@@ -81,7 +87,7 @@ td{
 }
 .imgcontainer{
     width: 100%;
-    overflow: hidden;
+
 }
 .img{
     position: absolute;
@@ -93,42 +99,109 @@ td{
 .img_man{
     width:15%;
     z-index: 1;
-    animation-name:float_man;
+    padding-left: 120%;
 }
 
 .img_woman{
     width:11%;
     z-index: 2;
-    animation-name:float_woman;
+    padding-left: 120%;
 }
 
 .img_boy{
     width:12%;
     z-index: 3;
+    padding-left: 120%;
+}
+
+.anime_man{
+    width:15%;
+    z-index: 1;
+    padding-left: 120%;
+    animation-name:float_man;
+}
+
+.anime_woman{
+    width:11%;
+    z-index: 2;
+    padding-left: 120%;
+    animation-name:float_woman;
+}
+
+.anime_boy{
+    width:12%;
+    z-index: 3;
+    padding-left: 120%;
     animation-name:float_boy;
+}
+.animeout_man{
+    width:15%;
+    z-index: 1;
+    padding-left: 120%;
+    animation-name:floatout_man;
+}
+
+.animeout_woman{
+    width:11%;
+    z-index: 2;
+    padding-left: 120%;
+    animation-name:floatout_woman;
+}
+
+.animeout_boy{
+    width:12%;
+    z-index: 3;
+    padding-left: 120%;
+    animation-name:floatout_boy;
 }
 
 @keyframes float_man{
     from{
-        right: 0px;
+        padding-left: 120%;
     }
     to{
-        right: 8%;
+        padding-left: 76%;
     }
+
 }
 @keyframes float_woman{
     from{
-        right: 0px;
+        padding-left: 120%;
     }
     to{
-        right: 20%;
+        padding-left: 68%;
     }
 }
 @keyframes float_boy{
     from{
-        right: 0px;
+        padding-left: 120%;
     }
     to{
-        right: 30%;
+        padding-left: 57%;
+    }
+}
+@keyframes floatout_man{
+    from{
+        padding-left: 76%;
+    }
+    to{
+        padding-left: 120%;
+    }
+
+}
+@keyframes floatout_woman{
+    from{
+        padding-left: 68%;
+    }
+    to{
+        padding-left: 120%;
+    }
+}
+@keyframes floatout_boy{
+    from{
+        padding-left: 57%;
+    }
+    to{
+        padding-left: 120%;
     }
 }

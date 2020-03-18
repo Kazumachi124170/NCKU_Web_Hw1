@@ -15,7 +15,15 @@
             var num = Number(document.getElementById("adult").innerHTML);
             if(num!=0){
                 document.getElementById("adult").innerHTML = num-1;
+                if(num==1){
+                document.getElementById("img_man").className = 'img animeout_man';
+                }else if(num==2){
+                    document.getElementById("img_woman").className = 'img animeout_woman';
+                }else if(num==3){
+                    document.getElementById("img_boy").className = 'img animeout_boy';
+                }
             }
+            
         }
         function ChildrenMinus(){
             var num = Number(document.getElementById("children").innerHTML);
@@ -26,6 +34,13 @@
         function AdultPlus(){
             var num = Number(document.getElementById("adult").innerHTML);
             document.getElementById("adult").innerHTML = num+1;
+            if(num==0){
+                document.getElementById("img_man").className = 'img anime_man';
+            }else if(num==1){
+                document.getElementById("img_woman").className = 'img anime_woman';
+            }else if(num==2){
+                document.getElementById("img_boy").className = 'img anime_boy';
+            }
         }
         function ChildrenPlus(){
             var num = Number(document.getElementById("children").innerHTML);
@@ -55,7 +70,6 @@
     <article>
         <section>
             <p class="mouseDefault">您預計什麼時候入住</p>
-            <!-- <p class = "date mouseDefault"> 2020/3/2-2020/3/1</p> -->
             <input type="text" name="daterange">
         </section>
 
@@ -77,9 +91,9 @@
         </section>
     </article>
     <aside class="imgcontainer">
-        <img class="img img_man" src="./Material/img/person1@2x.png">
-        <img class="img img_woman" src="./Material/img/person2@2x.png">
-        <img class="img img_boy" src="./Material/img/person3@2x.png">
+        <img class="img img_man" id="img_man" src="./Material/img/person1@2x.png">
+        <img class="img img_woman" id="img_woman" src="./Material/img/person2@2x.png">
+        <img class="img img_boy" id="img_boy" src="./Material/img/person3@2x.png">
     </aside>
 </body>
 </html>
