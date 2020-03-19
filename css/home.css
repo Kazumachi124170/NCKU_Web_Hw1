@@ -1,0 +1,29 @@
+article{
+    width: 47.5%;
+    float: right;
+    font-size: 160%;
+    line-height: 40px;
+    letter-spacing: 3px;
+    padding: 0 8% 0 0;
+    opacity: 0;
+}
+.header{
+    opacity: 0;
+}
+
+.navagation{
+    opacity: 0;
+}
+
+.fadein{
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-name: fadein;
+}
+
+@keyframes fadein{
+    to{
+        opacity: 1;
+    }
+}
+

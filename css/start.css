@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+    color: #FDFAE7;
+    overflow: hidden;
+    user-select:none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #8A9B97;
+}
+
+.img{
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+.lamp1{
+    width: 2.4%;
+    top: -11%;
+    left: 17.5%;
+}
+
+.lamp1-anime{
+    animation-name: lamp1-float;
+}
+
+.lamp1-overanime{
+    width: 2.4%;
+    left: 36%;
+    top: -14%;
+}
+
+@keyframes lamp1-float{
+    to{
+        left: 36%;
+        top: -14%;
+    }
+}
+
+.lamp2{
+    width: 4%;
+    top: -19%;
+    left: 32%;
+}
+
+.lamp2-anime{
+    animation-name: lamp2-float;
+}
+
+.lamp2-overanime{
+    width: 4%;
+    top: -19%;
+    left: 42.5%;
+}
+
+@keyframes lamp2-float{
+    to{
+        left: 42.5%;
+    }
+}
+
+.lamp3{
+    width: 3%;
+    top: -6.5%;
+    left: 47%;
+}
+
+.lamp3-anime{
+    animation-name: lamp3-float;
+}
+
+.lamp3-overanime{
+    width: 3%;
+    top: -13%;
+    left: 49%;
+}
+
+@keyframes lamp3-float{
+    to{
+        top: -13%;
+        left: 49%;
+    }
+}
+
+.lamp4{
+    width: 2.2%;
+    top: -17%;
+    left: 61%;
+}
+
+.lamp4-anime{
+    animation-name: lamp4-float;
+}
+
+.lamp4-overanime{
+    width: 2.2%;
+    top: -13.8%;
+    left: 55.5%;
+}
+
+@keyframes lamp4-float{
+    to{
+        top: -13.8%;
+        left: 55.5%;
+    }
+}
+
+.lamp5{
+    width: 1.6%;
+    top: -6%;
+    left: 75%;
+}
+
+.lamp5-anime{
+    animation-name: lamp5-float;
+}
+
+.lamp5-overanime{
+    width: 1.6%;
+    top: -12%;
+    left: 62%;
+}
+
+@keyframes lamp5-float{
+    to{
+        top: -12%;
+        left: 62%;
+    }
+}
+
+.lamp-fade{
+    animation-duration:1.7s;
+    animation-name: lamp-fade;
+}
+
+@keyframes lamp-fade{
+    to{
+        top: -40%;
+    }
+}
+
+.LOGO {
+    position: absolute;
+    width: 8%;
+    top: 39%;
+    left: 45.5%;
+    z-index: 4;
+}
+
+.LOGO-anime{
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-name: LOGO-float;
+}
+
+.LOGO-overanime{
+    position: absolute;
+    width: 34%;
+    top: 25%;
+    left: 34%;
+    z-index: 4;
+}
+
+.LOGO-next{
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-name: LOGO-next;
+}
+
+@keyframes LOGO-float{
+    to{
+        width: 34%;
+        top: 25%;
+        left: 34%;
+    }
+}
+
+@keyframes LOGO-next{
+    to{
+        width: 15%;
+        top: 6.8%;
+        left: 42.5%; 
+    }
+}
+.person1{
+    z-index: 2;
+    width: 23%;
+    bottom: 0%;
+    left: -20.5%;
+}
+
+.person1-anime{
+    animation-name: person1-float;
+}
+
+.person1-overanime{
+    z-index: 2;
+    width: 23%;
+    bottom: 0%;
+    left: 5%
+}
+
+.person1-next{
+    animation-name: person1-next;
+}
+
+@keyframes person1-float{
+    to{
+        left: 5%
+    }
+}
+
+@keyframes person1-next{
+    to{
+        left: 15.3%;
+    }
+}
+
+.group{
+    width: 95%;
+    left: 4%;
+    top: 17%;
+}
+
+.group-anime{
+    animation-name: group-float;
+}
+
+.group-overanime{
+    width: 54%;
+    top: 38%;
+    left: 24.5%;
+}
+
+.group-fade{
+    animation-name: group-fade;
+}
+
+@keyframes group-float{
+    to{
+        width: 54%;
+        top: 38%;
+        left: 24.5%;
+    }
+}
+
+@keyframes group-fade{
+    to{
+        opacity: 0;
+    }
+}
+
+.person2{
+    z-index: 3;
+    width: 16.7%;
+    bottom: 0%;
+    left: 98%
+}
+
+.person2-anime{
+    animation-name: person2-float;
+}
+
+.person2-overanime{
+    z-index: 3;
+    width: 16.7%;
+    bottom: 0%;
+    left: 79%;
+}
+
+.person2-next{
+    animation-name: person2-next;
+}
+
+@keyframes person2-float{
+    to{
+        left: 79%;
+    }
+}
+
+@keyframes person2-next{
+    to{
+        left: 5.3%;
+    }
+}
+
